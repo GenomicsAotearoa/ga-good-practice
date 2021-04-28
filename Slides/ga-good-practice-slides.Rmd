@@ -64,6 +64,20 @@ Sections:
     - enable collaboration
     - build upon existing work
 
+# Quiz time...
+
+## Not really, just some thinking
+
+Spend two minutes thinking about the answers to the following questions:
+
+1. If you were abducted by aliens in the next 30 seconds, how easy would it be for another GA team member to carry on your research? (after we finished mourning your loss, of course).
+
+2. How much time would you need to spend getting your work to the point where another human being *could* carry on with your project?  What would this involve?
+
+3. If you laptop/desktop was unexpectedly destroyed by evil anti-genomics forces, what impact would this have on your research project? (it's ok, we'll buy you a shiny new one from our "anti-anti-genomics forces" insurance fund).
+
+# Let's (briefly) discuss your answers...
+
 ## Overview
 
 Sections:
@@ -126,35 +140,189 @@ Sections:
 
 </ol>
 
-## Software 
+## Software (scripts, code etc)
 
- 1. Place a brief explanatory comment at the start of every program.
- 2. Decompose programs into functions.
- 3. Be ruthless about eliminating duplication.
- 4. Always search for well-maintained software libraries that do what you need.
- 5. Test libraries before relying on them.
- 6. Give functions and variables meaningful names.
- 7. Make dependencies and requirements explicit.
- 8. Do not comment and uncomment sections of code to control a program's behavior.
- 9. Provide a simple example or test data set.
- 10. Submit code to a reputable DOI-issuing repository.
+1. Place a brief explanatory comment at the start of every program.
+  
+    - explain what the code does, and how to use it.
+    - if approriate, include example of usage.
+  
+2. Decompose programs into functions.
+ 
+    - breaks tasks into small (well-documented) chunks
+    - digestible => understandable
+  
+3. Be ruthless about eliminating duplication.
+ 
+    - use functions
+    - don't copy and paste code chunks
+ 
+## Software (scripts, code etc)
+ 
+<ol start=4> 
+ 
+<li> Always search for well-maintained software libraries that do what you need.
+
+  - don't reinvent the wheel...
+ 
+<li> Test libraries before relying on them.
+ 
+<li> Give functions and variables meaningful names.
+
+  - use tab completion with informative names
+ 
+<li> Make dependencies and requirements explicit.
+
+  - can be as simple as adding a `requirements.txt` file.
+
+</ol>
+
+## Software (scripts, code etc)
+ 
+<ol start=8> 
+
+<li> Do not comment and uncomment sections of code to control a program's behavior.
+
+  - error prone
+  - use `if/else` statements instead
+ 
+<li> Provide a simple example or test data set.
+
+  - also good for you to help with testing
+  - and great for running workshops!
+
+<li> Submit code to a reputable DOI-issuing repository.
+
+</ol>
+
+# Even if you are not working as part of a team...
+
+# Even if you are not working as part of a team...<BR><BR>...YOU ARE!
 
 ## Collaboration 
 
- 1. Create an overview of your project.
- 2. Create a shared "to-do" list for the project.
- 3. Decide on communication strategies.
- 4. Make the license explicit.
- 5. Make the project citable.
+ - All of the GA projects are part of a larger research programme, and the work you are doing has the potential to contribute to other projects in the future.
+ 
+ - You are also collaborating with yourself: ask "present Murray" about his good friend "future Murray".
+ 
+## Collaboration 
+
+1. Create an overview of your project.
+
+    - `README.txt` or `README.md` in top-level directory
+    
+2. Create a shared "to-do" list for the project.
+
+    - even if it is just for you...
+
+3. Decide on communication strategies.
+
+4. Make the license explicit.
+
+5. Make the project citable.
+
+
+# Quiz Time...
+
+## Whose project folder looks like this?
+
+<center>
+<img src="junk.jpg">
+</center>
+
+# This stuff is critical...
 
 ## Project Organisation 
 
- 1. Put each project in its own directory, which is named after the project.
- 2. Put text documents associated with the project in the doc directory.
- 3. Put raw data and metadata in a data directory and files generated during cleanup and analysis in a results directory.
- 4. Put project source code in the src directory.
- 5. Put external scripts or compiled programs in the bin directory.
- 6. Name all files to reflect their content or function.
+1. Put each project in its own directory, which is named after the project.
+
+2. Put text documents associated with the project in the `doc` directory.
+
+3. Put raw data and metadata in a data directory and files generated during cleanup and analysis in a results directory.
+ 
+    - critical to separate input data from derived data
+    - don't be afraid to use subdirectories to impose additional order
+ 
+## Project Organisation 
+
+<ol start=4>  
+ 
+<li> Put project source code in the src directory.
+ 
+  - Interpreted: R, Python
+  - Compiled: C++, Fortran, Java
+  - Shell scripts, SQL snippets
+  
+  For small projects, include a "runall" script.  For example:
+  
+  ```
+  TEMP_DIR = ./temp_zip_files
+  echo "Packaging zip files required by analysis tool…"
+  mkdir $(TEMP_DIR)
+  ./src/make-zip-files.py $(TEMP_DIR) *.dat
+  echo "Analyzing…"
+  ./bin/sqr_mean_analyze -i $(TEMP_DIR) -b "temp"
+  echo "Cleaning up…"
+  rm -rf $(TEMP_DIR)
+  ```
+  
+</ol>
+
+## Project Organisation 
+
+<ol start=5> 
+
+<li> Put external scripts or compiled programs in the bin directory.
+
+  - may not be relevant for some projects (e.g., if not using compiled code)
+  - why external scripts here? Can make distinction for edited vs non-edited files: binary files and external scripts are not directly edited.
+
+<li> Name all files to reflect their content or function.
+
+ - Please do this
+ 
+</ol>
+
+## Project Organisation 
+
+<ol start=5> 
+
+<li> Put external scripts or compiled programs in the bin directory.
+
+  - may not be relevant for some projects (e.g., if not using compiled code)
+  - why external scripts here? Can make distinction for edited vs non-edited files: binary files and external scripts are not directly edited.
+
+<li> Name all files to reflect their content or function.
+
+ - Please do this
+ - <p style="color:red">**PLEASE!!**</p>
+ 
+</ol>
+
+## Example: project layout
+
+```
+|-- CITATION
+|-- README
+|-- LICENSE
+|-- requirements.txt
+|-- data
+|    |-- birds_count_table.csv
+|-- doc
+|    |-- notebook.md
+|    |-- manuscript.md
+|    |-- changelog.txt
+|-- results
+|    |-- summarized_results.csv
+|-- src
+|    |-- sightings_analysis.py
+|    |-- runall.py
+```
+
+<font size="2">
+Wilson G, Bryan J, Cranston K, Kitzes J, Nederbragt L, Teal TK.  PLoS Comput Biol. 2017 Jun 22;13(6):e1005510.<BR>
+[10.1371/journal.pcbi.1005510](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510) 
+</font>
 
 ## Keeping Track of Changes
 
@@ -189,5 +357,12 @@ Sections:
  - Rule 9: Connect Textual Statements to Underlying Results
  - Rule 10: Provide Public Access to Scripts, Runs, and Results
 
+## Tools and habits...
 
+ - Tools **enable** reproducible research
+    - there are lots of them
+    - they are not hard to learn
 
+ - Good habits **ensure** reproducible research
+    - getting into the habit of using these "good practice tools" as a natual part of your workflow is critical
+    - it takes committment, but it will be hugely benficial... 
