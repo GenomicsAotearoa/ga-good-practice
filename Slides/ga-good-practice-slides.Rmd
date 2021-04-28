@@ -78,7 +78,7 @@ Spend two minutes thinking about the answers to the following questions:
 
 3. If you laptop/desktop was unexpectedly destroyed by evil anti-genomics forces, what impact would this have on your research project? (it's ok, we'll buy you a shiny new one from our "anti-anti-genomics forces" insurance fund).
 
-# Let's (briefly) discuss your answers...
+# Lets (briefly) discuss your answers...
 
 ## Overview
 
@@ -199,7 +199,7 @@ Sections:
 
 # Even if you are not working as part of a team...<BR><BR><BR>
 
-# Even if you are not working as part of a team...<BR><BR>...YOU ARE!
+# Even if you are not working as part of a team...<BR><BR>...YOU ARE!!
 
 ## Collaboration 
 
@@ -289,7 +289,7 @@ Sections:
 
 <li> Name all files to reflect their content or function.
 
- - Please do this
+ - Please do this.
  
 </ol>
 
@@ -437,6 +437,7 @@ Sandve GK, Nekrutenko A, Taylor J, Hovig E. PLoS Comput Biol. 2013 Oct;9(10):e10
     - R markdown
     - Workflow languages (Snakemake, CWL, NextFlow)
  - If you are not routinely using at least some of these tools in your work, then you are missing out a huge productivity boost.
+ - And if you don't know how to get started in this space - get in touch with us, and we'll point you in the right direction.
  
 # Closing thoughts... 
  
