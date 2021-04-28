@@ -227,7 +227,7 @@ Sections:
 ## Whose project folder looks like this?
 
 <center>
-<img src="junk.jpg">
+<img src="Pics/junk.jpg">
 </center>
 
 # This stuff is critical...
