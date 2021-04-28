@@ -1,5 +1,5 @@
 ---
-title: "."
+title: " "
 subtitle: "Good Practice in Scientific Computing"
 author: "A/Prof Mik Black<BR>Department of Biochemistry<BR>University of Otago"
 date: "29 April 2021"
