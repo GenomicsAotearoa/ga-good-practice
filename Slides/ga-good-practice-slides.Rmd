@@ -1,9 +1,11 @@
 ---
-title: "Genomics Aotearoa"
+title: "."
 subtitle: "Good Practice in Scientific Computing"
-author: "Mik Black"
+author: "A/Prof Mik Black<BR>Department of Biochemistry<BR>University of Otago"
 date: "29 April 2021"
-output: ioslides_presentation
+output: 
+  ioslides_presentation:
+    css: styles.css
 ---
 
 ```{r setup, include=FALSE}
@@ -155,7 +157,7 @@ Sections:
 3. Be ruthless about eliminating duplication.
  
     - use functions
-    - don't copy and paste code chunks
+    - don't copy and paste code chunks (write a function)
  
 ## Software (scripts, code etc)
  
@@ -195,7 +197,7 @@ Sections:
 
 </ol>
 
-# Even if you are not working as part of a team...
+# Even if you are not working as part of a team...<BR><BR><BR>
 
 # Even if you are not working as part of a team...<BR><BR>...YOU ARE!
 
@@ -229,6 +231,14 @@ Sections:
 <center>
 <img src="Pics/junk.jpg">
 </center>
+
+## Find a partner...
+
+ - Spend two minutes discussing how you organise your projects.
+ - Think about:
+    - directory structure
+    - documentation
+    - where different types of files are kept
 
 # This stuff is critical...
 
@@ -326,43 +336,122 @@ Wilson G, Bryan J, Cranston K, Kitzes J, Nederbragt L, Teal TK.  PLoS Comput Bio
 
 ## Keeping Track of Changes
 
+ - The "Good Enough Practice" authors offer two methods for tracking changes:
+    - Manual versioning
+    - Version control systems (e.g., Git/GitHub, Subversion, Mercurial)
+ - GA <span style="color:red">**STRONGLY**</span> recommends version control via Git and GitHub.
+    - repositories can be private if needed.
+    - even limited sharing (e.g., within GA) helps reinforce good practice in terms of oragnisation abd documentation.
+    - a tidy and well-mainatined GitHub account is a huge asset when applying for jobs...
+
+## Keeping Track of Changes
+
  1. Back up (almost) everything created by a human being as soon as it is created.
+ 
  2. Keep changes small.
+ 
  3. Share changes frequently.
+ 
  4. Create, maintain, and use a checklist for saving and sharing changes to the project.
+ 
  5. Store each project in a folder that is mirrored off the researcher's working machine.
- 6. Add a file called CHANGELOG.txt to the project's docs subfolder.
- 7. Copy the entire project whenever a significant change has been made.
- 8. Use a version control system.
+ 
+<font size="4">
+ ~~6. Add a file called CHANGELOG.txt to the project's docs subfolder.~~
+ 
+ ~~7. Copy the entire project whenever a significant change has been made.~~
+</font>
+
+<ol start=8> 
+
+<li> <span style="color:red">**Use a version control system.**</span>
+
+</ol>
+
+<font size="2">
+No need for 6 and 7 if version control system used.
+</font>
 
 ## Manuscripts 
 
  1. Write manuscripts using online tools with rich formatting, change tracking, and reference management.
- 2. Write the manuscript in a plain text format that permits version control.
+
+    - e.g., Google Docs 
+    - all edits saved in single place online
+    - no need to merge versions
+    
+**OR**
+
+<ol start=2> 
+
+<li> Write the manuscript in a plain text format that permits version control.
+ 
+  - e.g., LaTeX, Markdown
+  - online/collaborative: Overleaf, Authorea
+
+</ol>
+
+# A few more suggestions...
 
 ## Ten Rules for Reproducible Computational Research
 
  - Rule 1: For Every Result, Keep Track of How It Was Produced
+ 
  - Rule 2: Avoid Manual Data Manipulation Steps
+ 
  - Rule 3: Archive the Exact Versions of All External Programs Used
+ 
  - Rule 4: Version Control All Custom Scripts
+ 
  - Rule 5: Record All Intermediate Results, When Possible in Standardized Formats
+ 
+<BR><BR>
+<font size="3">
+Sandve GK, Nekrutenko A, Taylor J, Hovig E. PLoS Comput Biol. 2013 Oct;9(10):e1003285. 
+</font>
  
  
 ## Ten Rules for Reproducible Computational Research
 
  - Rule 6: For Analyses That Include Randomness, Note Underlying Random Seeds
+ 
  - Rule 7: Always Store Raw Data behind Plots
+ 
  - Rule 8: Generate Hierarchical Analysis Output, Allowing Layers of Increasing Detail to Be Inspected
+ 
  - Rule 9: Connect Textual Statements to Underlying Results
+ 
  - Rule 10: Provide Public Access to Scripts, Runs, and Results
 
-## Tools and habits...
+<BR><BR>
+<font size="3">
+Sandve GK, Nekrutenko A, Taylor J, Hovig E. PLoS Comput Biol. 2013 Oct;9(10):e1003285. 
+</font>
+
+## Reproducible Computational Research
+
+ - The "Ten Rules" article is a little dated now
+ - "Reproducible Research" concepts and tools are now much more 
+ a part of our standard practice:
+    - Jupyter notebooks
+    - R markdown
+    - Workflow languages (Snakemake, CWL, NextFlow)
+ - If you are not routinely using at least some of these tools in your work, then you are missing out a huge productivity boost.
+ 
+# Closing thoughts... 
+ 
+## Tools and habits
 
  - Tools **enable** reproducible research
     - there are lots of them
     - they are not hard to learn
 
  - Good habits **ensure** reproducible research
-    - getting into the habit of using these "good practice tools" as a natual part of your workflow is critical
-    - it takes committment, but it will be hugely benficial... 
+    - there are many good habits: each one will improve your work in some way
+    - these **are** hard to learn (actually, that is not true - it is just hard to **unlearn** your bad habits)
+ - Getting into the habit of using these "good practice tools" as a central part of your workflow is critical
+ - It takes committment, but it will be hugely beneficial
+ 
+# THANK YOU...<BR><BR><BR>
+
+# THANK YOU...<BR><BR>\ \ \ \ \ \ \ \ \ \ \ \ ...and questions
