@@ -12,4 +12,4 @@
 
 *Work in progress*
 
-Next Section: [Manuscripts](https://github.com/mikblack/ga-good-practice/tree/main/6.Manuscripts)
+Next Section: [Manuscripts](..//6.Manuscripts)

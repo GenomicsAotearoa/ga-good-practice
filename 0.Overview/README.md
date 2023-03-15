@@ -12,4 +12,4 @@ Sections of the course:
 
 *Work in progress*
 
-Next section: [Data Management](https://github.com/mikblack/ga-good-practice/tree/main/1.DataManagement)
+Next section: [Data Management](..//1.DataManagement)
