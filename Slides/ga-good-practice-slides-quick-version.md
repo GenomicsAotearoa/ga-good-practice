@@ -20,9 +20,9 @@ Based on the papers:
     doi:
     [10.1371/journal.pcbi.1003285](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285)
 
-Full version of slides (html):
+Full version of slides (markdown version):
 
-<https://github.com/GenomicsAotearoa/ga-good-practice/tree/main/Slides>
+<https://github.com/GenomicsAotearoa/ga-good-practice/blob/main/Slides/ga-good-practice-slides-quick-version.md>
 
 ## Reproducibility + Efficiency + Continuity
 
@@ -148,8 +148,8 @@ Sections:
     the work you are doing has the potential to contribute to other
     projects in the future.
 
--   You are also collaborating with yourself: ask “present Murray” about
-    his good friend “future Murray”.
+-   You are also collaborating with yourself: ask “present Murray”
+    (Cadzow) about his good friend “future Murray”.
 
 ## Collaboration
 
