@@ -12,7 +12,7 @@ Workshop based on the papers:
     <BR>
     doi: [10.1371/journal.pcbi.1003285](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285)
 
-Note - the sections below are just a skeleton of the topics being covered. The more comprehensive material is in the [Slides](Slides) folder. A markdown version of thr presentation (which can be viewed in the browser) is at:
+Note - the sections below are just a skeleton of the topics being covered. The more comprehensive material is in the [Slides](Slides) folder. A markdown version of thr presentation (which can be viewed in the browser) is at (NB - images aren't displayed):
      
 https://github.com/GenomicsAotearoa/ga-good-practice/blob/main/Slides/ga-good-practice-slides.md
      
