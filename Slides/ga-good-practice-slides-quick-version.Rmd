@@ -2,7 +2,7 @@
 title: " "
 subtitle: "Good Practice in Scientific Computing"
 author: "Prof Mik Black<BR>Department of Biochemistry<BR>University of Otago"
-date: "29 April 2021"
+date: "16 March 2023"
 output: 
   ioslides_presentation:
     css: styles.css
@@ -11,6 +11,9 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+<!-- created github-flavoured-mardown via:  -->
+<!-- pandoc -t gfm ga-good-practice-slides-quick-version.html -o ga-good-practice-slides-quick-version.md -->
 
 ## GA - good practice session
 
