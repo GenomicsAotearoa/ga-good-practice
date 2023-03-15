@@ -1,6 +1,6 @@
 ---
 title: " "
-subtitle: "Good Practice in Scientific Computing"
+subtitle: "Good Practice in Scientific Computing - Quick Version"
 author: "Prof Mik Black<BR>Department of Biochemistry<BR>University of Otago"
 date: "16 March 2023"
 output: 
