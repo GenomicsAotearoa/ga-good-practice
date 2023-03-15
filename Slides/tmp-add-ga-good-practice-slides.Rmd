@@ -1,0 +1,98 @@
+---
+title: " "
+subtitle: "Good Practice in Scientific Computing 2"
+date: "15 March 2023"
+output:
+  ioslides_presentation:
+    css: styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Provenance
+
+## Provenance
+
+```{r, out.width='85%', fig.align='center'}
+knitr::include_graphics(
+  "http://end-to-end-provenance.github.io/provenance_infographic_1_final_juang.jpg"
+)
+
+```
+
+
+## Provenance
+
+```{r, out.width='85%', fig.align='center'}
+knitr::include_graphics(
+  "http://end-to-end-provenance.github.io/provenance_infographic_2_final_juang.jpg"
+)
+```
+
+## Tracking provenance
+
+1. Environment and dependencies (e.g. `sessionInfo()` in R)
+
+1. Movement and transformation of data
+   - Input data
+   - Data manipulation
+   - Output files
+
+1. Workflow management systems (Snakemake, Nextflow)
+
+# Consistency
+
+## Data consistency
+
+- Know your minimum information standards!
+  - Genomic Standards Consortium: https://www.gensc.org/pages/standards/extensions.html
+  - FAIR sharing: https://fairsharing.org/
+- Use controlled terminology for interoperability:
+  - Gene Ontology
+  - Enzyme Commission numbers
+  
+## Code consistency
+
+- Use popular encoding formats (e.g. ASCII, UTF-8)
+- Follow a consistent style
+  - Google's style guides: https://google.github.io/styleguide/
+
+# GitHub
+
+## General advice
+- Fetch before making changes
+- Commit very often
+- Archive repos that work
+  - Use branches
+  - Clone to a backed-up location
+- If experimenting, branch/fork the repo
+  - Prevents breaking. Don't be the cat that pushed it off the table...
+
+## General advice
+- Think about how objects are organised based on use-cases
+  - Workshop: Front page, day 1, day 2, ...
+  - Documentation: Introduction, step 1, step 2, troubleshooting, FAQ, ...
+  - Computational tools: `README.md`, `scr/`, `bin/`, `docs/`, ...
+
+## Collaboration
+- Adopt a workflow
+  - (small) GitHub flow: https://docs.github.com/en/get-started/quickstart/github-flow
+  - (medium) GitLab flow: https://docs.gitlab.com/ee/topics/gitlab_flow.html
+  - (large) Microsoft's Release flow: https://devblogs.microsoft.com/devops/release-flow-how-we-do-branching-on-the-vsts-team/
+  - General trunk based workflow: https://trunkbaseddevelopment.com/
+
+## Collaboration
+- Make small changes in the form of pull requests... PLEASE!
+  - Encourages discussion
+  - Easier review
+- Follow a standard code of conduct
+  - Manage expectations 
+  - Google's engineering practices: https://github.com/google/eng-practices
+- Access control
+  - Specific people approve pull requests
+  - Merge by pull requests, never just push to main
+  
+# Thank you!
+
